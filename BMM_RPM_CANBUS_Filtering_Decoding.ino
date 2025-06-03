@@ -34,22 +34,6 @@ void loop() {
   //scale hex value to get read values (factor .01, offset 0)
   float rpm = raw_rpm1;
 
-
-  //   // clamp negative values to zero
-  // // if (tps1 < 0.0f || tps1 > 200) 
-  // //   tps1 = 0.0f;
-  // if (tps1 < 0.0f)    tps1 = 0.0f;
-  // if (tps1 > 100.0f)  tps1 = 100.0f;
-
-  
-//   while(tps1 > 60.0f)
-//  {digitalWrite(LED_BUILTIN, HIGH);  // turn the LED on (HIGH is the voltage level)
-//   delay(1000);                      // wait for a second
-//   digitalWrite(LED_BUILTIN, LOW);   // turn the LED off by making the voltage LOW
-//   delay(1000);}
-
-
-
   //print raw and decoded tps value  
   Serial.print("Raw RPM = 0x");
   // pad to 4 hex digits:
